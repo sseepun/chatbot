@@ -1,0 +1,19 @@
+<div class="chat-app">
+  <div class="owner">
+    By <a href="https://www.facebook.com/sarun.seepun" target="_blank">S.Seepun</a>
+    version 0.1
+  </div>
+  <div class="title">Chat Bot</div>
+
+  <div class="chat-container" id="chat-container">
+    <ng-container *ngFor="let message of messages">
+      <div class="message" [ngClass]="{'from': message.sentBy==='bot', 'to':message.sentBy==='user'}">
+        {{ message.content }}
+      </div>
+    </ng-container>
+  </div>
+
+  <div class="tag">Your Message</div>
+  <input #talk (keyup.enter)="sendMessage(talk.value); talk.value='';" type="text">
+  <a class="button" (click)="sendMessage(talk.value); talk.value='';">Send</a>
+</div>

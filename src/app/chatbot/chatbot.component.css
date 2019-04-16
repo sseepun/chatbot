@@ -1,0 +1,115 @@
+.chat-app {
+    width: 40%;
+    margin: 0 30%;
+}
+
+.owner {
+    width: 100%;
+    text-align: end;
+    font-size: 10px;
+    font-weight: 600;
+}
+.title {
+    text-align: center;
+    color: #2095FE;
+    font-size: 64px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.tag {
+    font-weight: 600;
+    margin-top: 20px;
+    color: #363636;
+}
+
+.chat-container {
+    width: 100%;
+    min-height: calc(100vh - 325px);
+    max-height: calc(100vh - 325px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 3px solid #2095FE;
+    border-radius: 10px;
+}
+
+.message {
+    width: 60%;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 12px 20px;
+    margin: 10px 10px;
+}
+.message.from {
+    float: left;
+    background: #E5E4E9;
+}
+.message.to {
+    float: right;
+    text-align: end;
+    background: #2095FE;
+    color: #fff;
+}
+
+input {
+    width: calc(100% - 27px);
+    border: 3px solid #2095FE;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 8px 14px;
+    margin: 8px 0 15px 0;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.button {
+    background: #2095FE;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover {
+    background: rgb(41, 143, 231);
+}
+.button:active {
+    background: rgb(38, 114, 180);
+}
+
+
+@media screen and (max-width: 1100px) {
+    .chat-app {
+        width: 55%;
+        margin: 0 22.5%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .chat-app {
+        width: 65%;
+        margin: 0 17.5%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .chat-app {
+        width: 75%;
+        margin: 0 12.5%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .chat-app {
+        width: 85%;
+        margin: 0 7.5%;
+    }
+    .title {
+        font-size: 56px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .chat-app {
+        width: 95%;
+        margin: 0 2.5%;
+    }
+}
